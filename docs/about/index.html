@@ -1,0 +1,520 @@
+<!DOCTYPE html><html lang="en" prefix="og:http://ogp.me/ns#">
+      <head>
+        <script data-state="apollo" >
+          window.__APOLLO_STATE__ = true;
+        </script>
+    <!-- Shady DOM styles for greenwood-route --><!-- Shady DOM styles for router-outlet --><!-- Shady DOM styles for eve-container --><style scope="eve-container">lit$366801227</style><!-- Shady DOM styles for app-social-icons --><style scope="app-social-icons">app-social-icons{display:flex;justify-content:space-around;flex-direction:row;}app-social-icons .icons.app-social-icons{margin:auto}app-social-icons .icons.app-social-icons svg.app-social-icons path.app-social-icons{fill:black}app-social-icons .slack-icon.app-social-icons{padding:0 1rem 0 1.25rem}@media  (max-width:768px){app-social-icons{flex-direction:row}}</style><!-- Shady DOM styles for app-header --><style scope="app-header">app-header .header.app-header{background-color:#73DCCA;min-height:30px;padding:10px;font-size:1.2rem;}app-header .header.app-header a.app-header{color:#000;text-decoration:none;}app-header .header.app-header a.active.app-header{border-bottom:2px solid #000}app-header .header.app-header .project-name.app-header{margin:-2px 0 auto;padding:0;padding-top:4px;display:inline-block;color:#201e2e;font-weight:bold;}app-header .header.app-header .head-wrap.app-header{display:flex;align-items:center;flex-wrap:wrap;justify-content:space-between;}@media  (max-width:768px){app-header .header.app-header .head-wrap.app-header{flex-direction:column;text-align:center;}}app-header .header.app-header nav.app-header{justify-items:left;width:55%;}app-header .header.app-header nav.app-header ul.app-header{padding:0;margin:0;list-style:none;text-align:center;}app-header .header.app-header nav.app-header ul.app-header li.app-header{margin:0;color:#00836D;display:inline-block;padding:10px;}app-header .header.app-header nav.app-header ul.app-header li.app-header:hover,app-header .header.app-header nav.app-header ul.app-header li.app-header:focus{color:#f9e7ca}app-header .header.app-header nav.app-header ul.app-header li.app-header:hover a.app-header,app-header .header.app-header nav.app-header ul.app-header li.app-header:focus a.app-header{color:#fff}@media  (max-width:768px){app-header .header.app-header nav.app-header{width:100%}}app-header .header.app-header .brand.app-header{justify-items:left;padding:10px;}app-header .header.app-header .brand.app-header img.app-header{float:left;height:30px;width:30px;margin-right:0.5rem;}app-header .header.app-header .social.app-header{margin-left:auto;text-align:right;}app-header .header.app-header .social.app-header img.app-header{width:84px;height:20px;}</style><!-- Shady DOM styles for eve-button --><!-- Shady DOM styles for app-banner --><!-- Shady DOM styles for app-shelf --><style scope="app-shelf">app-shelf h1.app-shelf,app-shelf h2.app-shelf,app-shelf h3.app-shelf,app-shelf h4.app-shelf,app-shelf h5.app-shelf,app-shelf h6.app-shelf{font-family:'Source Sans Pro',sans-serif}app-shelf a.app-shelf{text-decoration:none;color:#2d3d3a;}app-shelf a.app-shelf:hover,app-shelf a.app-shelf:focus{color:black}app-shelf .list-wrap.app-shelf>.app-shelf:first-child{display:grid;grid-template-columns:auto 20px;align-items:center;font-size:1.5em;margin-block-start:0.83em;margin-block-end:0.83em;margin-inline-start:0;margin-inline-end:0;font-weight:bold;}@media  (max-width:768px){app-shelf .list-wrap.app-shelf>.app-shelf:first-child{padding-left:10px;padding-right:10px;}}app-shelf h2.app-shelf{display:block;font-size:1.5em;margin-block-start:0.83em;margin-block-end:0.83em;margin-inline-start:0;margin-inline-end:0;font-weight:bold;}@media  (max-width:768px){app-shelf h2.app-shelf{padding-left:10px;padding-right:10px;}}app-shelf div.app-shelf>ul.app-shelf{padding-left:0}app-shelf div.app-shelf>ul.app-shelf li.app-shelf{list-style:none}app-shelf .list-wrap.app-shelf ul.app-shelf{padding-left:0}app-shelf .list-wrap.app-shelf ul.app-shelf li.app-shelf{display:block;margin-block-start:1em;margin-block-end:1em;margin-inline-start:0;margin-inline-end:0;}app-shelf .list-wrap.app-shelf ul.app-shelf li.app-shelf a.app-shelf{cursor:pointer}@media  (max-width:768px){app-shelf .list-wrap.app-shelf ul.app-shelf{padding-left:10px}}app-shelf span.app-shelf{pointer-events:none}app-shelf span.app-shelf>svg.app-shelf{margin-top:10px;margin-left:auto;height:15px;}app-shelf .hidden.app-shelf{display:none!important}app-shelf .active.app-shelf{color:red}</style><!-- Shady DOM styles for app-scroll --><style>body{transition:opacity ease-in 0.2s}body[unresolved]{opacity:0;display:block;overflow:hidden;position:relative;}</style>
+        
+    
+          
+              <script >
+                /**
+ * @license
+ * Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
+ * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+ * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+ * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+ * Code distributed by Google as part of the polymer project is also
+ * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+ */
+!function(){var e,n=!1,t=[],o=!1;function r(){window.WebComponents.ready=!0,document.dispatchEvent(new CustomEvent("WebComponentsReady",{bubbles:!0}))}function d(){window.customElements&&customElements.polyfillWrapFlushCallback&&customElements.polyfillWrapFlushCallback((function(n){e=n,o&&e()}))}function i(){window.HTMLTemplateElement&&HTMLTemplateElement.bootstrap&&HTMLTemplateElement.bootstrap(window.document),n=!0,c().then(r)}function c(){o=!1;var n=t.map((function(e){return e instanceof Function?e():e}));return t=[],Promise.all(n).then((function(){o=!0,e&&e()})).catch((function(e){console.error(e)}))}window.WebComponents=window.WebComponents||{},window.WebComponents.ready=window.WebComponents.ready||!1,window.WebComponents.waitFor=window.WebComponents.waitFor||function(e){e&&(t.push(e),n&&c())},window.WebComponents._batchCustomElements=d;var a="webcomponents-loader.js",s=[];(!("attachShadow"in Element.prototype)||!("getRootNode"in Element.prototype)||window.ShadyDOM&&window.ShadyDOM.force)&&s.push("sd"),window.customElements&&!window.customElements.forcePolyfill||s.push("ce");var l,w,m=function(){var e=document.createElement("template");if(!("content"in e))return!0;if(!(e.content.cloneNode()instanceof DocumentFragment))return!0;var n=document.createElement("template");n.content.appendChild(document.createElement("div")),e.content.appendChild(n);var t=e.cloneNode(!0);return 0===t.content.childNodes.length||0===t.content.firstChild.content.childNodes.length}();if(window.Promise&&Array.from&&window.URL&&window.Symbol&&!m||(s=["sd-ce-pf"]),s.length){var u,p=(w={createHTML:l=function(e){return e},createScript:l,createScriptURL:l},window.trustedTypes&&window.trustedTypes.createPolicy("webcomponents-loader",w)||w),f="bundles/webcomponents-"+s.join("-")+".js";if(window.WebComponents.root)u=window.WebComponents.root+f,window.trustedTypes&&window.trustedTypes.isScriptURL(window.WebComponents.root)&&(u=p.createScriptURL(u));else{var b=document.querySelector('script[src*="'+a+'"]');u=p.createScriptURL(b.src.replace(a,f))}var h=document.createElement("script");h.src=u,"loading"===document.readyState?(h.setAttribute("onload",p.createScript("window.WebComponents._batchCustomElements()")),document.write(p.createHTML(h.outerHTML)),document.addEventListener("DOMContentLoaded",i)):(h.addEventListener("load",(function(){d(),i()})),h.addEventListener("error",(function(){throw new Error("Could not load polyfill bundle"+u)})),document.head.appendChild(h))}else"complete"===document.readyState?(n=!0,r()):(window.addEventListener("load",i),window.addEventListener("DOMContentLoaded",(function(){window.removeEventListener("load",i),i()})))}();
+//# sourceMappingURL=webcomponents-loader.72678ac7.js.map
+
+              </script>
+            
+      
+        
+        
+    
+        
+
+    
+          <title>Greenwood - About</title>
+          <meta charset="utf-8">
+<meta name="description" content="Your workbench for the web, focused on supporting modern web standards and development to help you create your next project.">
+<meta name="twitter:site" content="@PrjEvergreen">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.greenwoodjs.io">
+<meta property="og:image" content="https://www.greenwoodjs.io/assets/greenwood-logo-og.png">
+<meta property="og:description" content="Your workbench for the web, focused on supporting modern web standards and development to help you create your next project.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta property="og:title" content="Greenwood - About">
+          <link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" href="/favicon.ico">
+
+              <style>
+                @font-face {font-family:'Source Sans Pro';font-style:normal;font-weight:400;font-display:swap;src:local('Source Sans Pro Regular'),local('SourceSansPro-Regular'),url('/assets/fonts/source-sans-pro-v13-latin-regular.woff2')format('woff2'),url('/assets/fonts/source-sans-pro-v13-latin-regular.woff')format('woff'),url('/assets/fonts/source-sans-pro-v13-latin-regular.ttf')format('truetype');}*{margin:0;padding:0;text-decoration:none;}html{background-color:white}body{font-family:'Source Sans Pro',sans-serif;line-height:1.4;}img{width:100%}h2,h3,h4,h5{margin-top:1.5rem!important;margin-bottom:1.5rem!important;color:#201e2e;}ul,ol{padding-left:20px}p{margin:20px 0}ul>li{margin:10px 0}a{color:#504b65;text-decoration:underline;}a .step{margin:2px}p>code{color:#2d3d3a;font-weight:800;}.gwd-wrapper .single-column{margin:inherit;color:#000;}
+              </style>
+            
+
+              <style>
+                code[class*='language-'],pre[class*='language-']{color:#ccc;background:none;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;}pre[class*='language-']{padding:1em;margin:.5em 0;overflow:auto;}:not(pre)>code[class*='language-'],pre[class*='language-']{background:#2d2d2d}:not(pre)>code[class*='language-']{padding:.1em;border-radius:.3em;white-space:normal;}.token.comment,.token.block-comment,.token.prolog,.token.doctype,.token.cdata{color:#999}.token.punctuation{color:#ccc}.token.tag,.token.attr-name,.token.namespace,.token.deleted{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.number,.token.function{color:#f08d49}.token.property,.token.class-name,.token.constant,.token.symbol{color:#f8c555}.token.selector,.token.important,.token.atrule,.token.keyword,.token.builtin{color:#cc99cd}.token.string,.token.char,.token.attr-value,.token.regex,.token.variable{color:#7ec699}.token.operator,.token.entity,.token.url{color:#67cdcc}.token.important,.token.bold{font-weight:bold}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}
+              </style>
+            
+
+              <style>
+                h3{color:#2d3d3a;padding-top:1.5rem;font-size:1.8rem!important;}h2{font-size:2rem}h4,h5,h6{font-size:1.2rem}h1,h2,h3,h4,h5{line-height:1.8rem;color:#2d3d3a;}h3>a>span.icon{width:28px;height:24px;float:left;padding:2px;background-image:url('/assets/link.png');background-size:20px 20px;background-repeat:no-repeat;background-position-y:center;}h3>a>span.icon:hover:focus{filter:invert(0.4)}.gwd-content-wrapper{display:flex}@media  (max-width:768px){.gwd-content-wrapper{flex-direction:column}}.gwd-sidebar{width:300px;background-color:white;height:100%;overflow:auto;padding:2rem;position:sticky;top:0;border-right:1px solid #ededed;}@media  (max-width:768px){.gwd-sidebar{width:100%;height:100%;padding:0;position:relative;border-right:0;border-bottom:3px solid #ededed;}}.gwd-content{max-width:100ch;height:100%;min-height:calc(100vh - (70px + 6rem));margin:auto;background-color:white;font-size:1.2rem;padding:2rem;}@media  (max-width:768px){.gwd-content{padding:2rem 0 0}}.gwd-content #github-edit-button{padding:1rem;background-color:black;color:white;margin:2rem 0 1rem;border-radius:0.5rem;}.gwd-content #github-edit-button-container{display:flex;justify-content:flex-end;margin-right:15px;}.gwd-content h3{font-size:2rem;margin:5px 0;}.gwd-content a{color:#1d337a}.gwd-content img{width:100%}.gwd-content blockquote{margin:0.5em;padding:15px;background-color:#dcf9ca!important;border-left:6px solid #192a27;}@media  (max-width:768px){.gwd-content{width:100%;height:100%;}}table{border:1px solid #020202;width:100%;text-align:left;margin-bottom:20px;}table td:first-child{min-width:100px;white-space:nowrap;padding:0 5px;}table th{background-color:#f9e7ca;text-decoration:underline;}iframe.stackblitz{width:100%;height:800px;display:none;}@media  (min-width:768px){iframe.stackblitz{display:block}}
+              </style>
+            
+          <style>.gwd-content-outlet{min-height:100vh}</style>
+          <script type="module">import"/eve-container.cf808c16.js";import"/lit-element.03977ca5.js";
+//# sourceMappingURL=756510913.63f9c7b4.js.map
+</script>
+
+              <script  type="module">
+                import{b as e,s as a,i as t,r as i,x as r}from"/lit-element.03977ca5.js";import{c as n,M as o}from"/menu.12a65d8a.js";import"/eve-container.cf808c16.js";const s=e`<svg
+  height="35"
+  viewBox="0 0 16 16"
+  version="1.1"
+  width="35"
+  aria-hidden="true">
+    <path
+      fill-rule="evenodd"
+      fill="white"
+      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+      0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+      1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12
+      0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82
+      2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65
+      3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
+      8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+    </path>
+  </svg>`,l=e`<?xml version="1.0" ?>
+  <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+  <svg
+    enable-background="new 0 0 56.693 56.693"
+    height="40px"
+    id="Layer_1"
+    version="1.1"
+    viewBox="0 0 56.693 56.693"
+    width="40px"
+    fill="white"
+    xml:space="preserve"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path
+        d="M28.348,5.157c-13.6,0-24.625,11.027-24.625,24.625c0,13.6,11.025,24.623,24.625,24.623c13.6,0,24.623-11.023,24.623-24.623
+        C52.971,16.184,41.947,5.157,28.348,5.157z M40.752,24.817c0.013,0.266,0.018,0.533,0.018,0.803c0,8.201-6.242,17.656-17.656,17.656
+        c-3.504,0-6.767-1.027-9.513-2.787c0.486,0.057,0.979,0.086,1.48,0.086c2.908,0,5.584-0.992,7.707-2.656
+        c-2.715-0.051-5.006-1.846-5.796-4.311c0.378,0.074,0.767,0.111,1.167,0.111c0.566,0,1.114-0.074,1.635-0.217
+        c-2.84-0.57-4.979-3.08-4.979-6.084c0-0.027,0-0.053,0.001-0.08c0.836,0.465,1.793,0.744,2.811,0.777
+        c-1.666-1.115-2.761-3.012-2.761-5.166c0-1.137,0.306-2.204,0.84-3.12c3.061,3.754,7.634,6.225,12.792,6.483
+        c-0.106-0.453-0.161-0.928-0.161-1.414c0-3.426,2.778-6.205,6.206-6.205c1.785,0,3.397,0.754,4.529,1.959
+        c1.414-0.277,2.742-0.795,3.941-1.506c-0.465,1.45-1.448,2.666-2.73,3.433c1.257-0.15,2.453-0.484,3.565-0.977
+        C43.018,22.849,41.965,23.942,40.752,24.817z"/>
+  </svg>`,c=e`<svg
+  width="35"
+  height="35"
+  style="fill:white;"
+  viewBox="0 0 54 54"
+  xmlns="http://www.w3.org/2000/svg">
+    <g
+    fill="none"
+    fill-rule="evenodd">
+      <path
+        d="M19.712.133a5.381 5.381 0 0 0-5.376 5.387 5.381 5.381 0 0 0 5.376
+        5.386h5.376V5.52A5.381 5.381 0 0 0 19.712.133m0 14.365H5.376A5.381
+        5.381 0 0 0 0 19.884a5.381 5.381 0 0 0 5.376 5.387h14.336a5.381 5.381
+        0 0 0 5.376-5.387 5.381 5.381 0 0 0-5.376-5.386"
+        fill="#fff"></path>
+      <path
+        d="M53.76 19.884a5.381 5.381 0 0 0-5.376-5.386 5.381 5.381 0 0 0-5.376
+        5.386v5.387h5.376a5.381 5.381 0 0 0 5.376-5.387m-14.336 0V5.52A5.381 5.381
+        0 0 0 34.048.133a5.381 5.381 0 0 0-5.376 5.387v14.364a5.381 5.381 0 0 0
+        5.376 5.387 5.381 5.381 0 0 0 5.376-5.387"
+        fill="#fff"></path>
+      <path
+        d="M34.048 54a5.381 5.381 0 0 0 5.376-5.387 5.381 5.381 0 0
+        0-5.376-5.386h-5.376v5.386A5.381 5.381 0 0 0 34.048 54m0-14.365h14.336a5.381
+        5.381 0 0 0 5.376-5.386 5.381 5.381 0 0 0-5.376-5.387H34.048a5.381 5.381
+        0 0 0-5.376 5.387 5.381 5.381 0 0 0 5.376 5.386"
+        fill="#fff"></path>
+      <path
+        d="M0 34.249a5.381 5.381 0 0 0 5.376 5.386 5.381 5.381 0 0 0
+        5.376-5.386v-5.387H5.376A5.381 5.381 0 0 0 0 34.25m14.336-.001v14.364A5.381
+        5.381 0 0 0 19.712 54a5.381 5.381 0 0 0 5.376-5.387V34.25a5.381 5.381
+        0 0 0-5.376-5.387 5.381 5.381 0 0 0-5.376 5.387"
+        fill="#fff"></path>
+    </g>
+  </svg>`;customElements.define("app-social-icons",class extends a{static get styles(){return t`
+      ${i(":host {   display: flex;   justify-content: space-around;   flex-direction: row; }    :host .icons {     margin: auto;   }    :host .icons svg path {         fill: black;       }    :host .slack-icon {     padding: 0 1rem 0 1.25rem;   }    @media (max-width: 768px) {:host {     flex-direction: row }   }")}
+    `}render(){return r`
+      <a class="icons"
+        href="${"https://github.com/ProjectEvergreen/greenwood"}"
+        target="_blank"
+        rel="noreferrer noopener"
+        aria-label="open github page"
+      >${s}</a>
+
+      <a href="${"https://join.slack.com/t/thegreenhouseio/shared_invite/enQtMzcyMzE2Mjk1MjgwLTU5YmM1MDJiMTg0ODk4MjA4NzUwNWFmZmMxNDY5MTcwM2I0MjYxN2VhOTEwNDU2YWQwOWQzZmY1YzY4MWRlOGI"}"
+        class="icons slack-icon"
+        target="_blank"
+        rel="noreferrer noopener"
+        aria-label="slack"
+      >${c}</a>
+
+      <a class="icons"
+        href="${"https://twitter.com/PrjEvergreen"}"
+        target="_blank"
+        rel="noreferrer noopener"
+        aria-label="open twitter page"
+      >${l}</a>
+    `}});customElements.define("app-header",class extends a{static get properties(){return{navigation:{type:Array}}}static get styles(){return t`
+      ${i(":host .header {     background-color: #73DCCA;     min-height: 30px;     padding: 10px;     font-size: 1.2rem;   }      :host .header a {       color: #000;       text-decoration: none;     }      :host .header a.active {       border-bottom: 2px solid #000;     }      :host .header .project-name {       margin: -2px 0 auto;       padding: 0;       padding-top: 4px;       display: inline-block;       color: #201e2e;       font-weight: bold;     }      :host .header .head-wrap {       display: flex;       align-items: center;       flex-wrap: wrap;       justify-content: space-between;     }      @media (max-width: 768px) {      :host .header .head-wrap {         flex-direction: column;         text-align: center     }       }      :host .header nav {       justify-items: left;       width: 55%;     }      :host .header nav ul {         padding: 0;         margin: 0;         list-style: none;         text-align: center;       }      :host .header nav ul li {           margin: 0;           color: #00836D;           display: inline-block;           padding: 10px;         }      :host .header nav ul li:hover,           :host .header nav ul li:focus {             color: #f9e7ca;           }      :host .header nav ul li:hover a, :host .header nav ul li:focus a {               color: #fff;             }      @media (max-width: 768px) {      :host .header nav {         width: 100%     }       }      :host .header .brand {       justify-items: left;       padding: 10px;     }      :host .header .brand img {         float: left;         height: 30px;         width: 30px;         margin-right: 0.5rem;       }      :host .header .social {       margin-left: auto;       text-align: right;     }      :host .header .social img {         width: 84px;         height: 20px;       } ")}
+    `}constructor(){super(),this.navigation=[]}async connectedCallback(){super.connectedCallback();const e=await n.query({query:o,variables:{name:"navigation",order:"index_asc"}});this.navigation=e.data.menu.children.map((e=>e.item))}render(){const{navigation:e}=this,a=window.location.pathname;return r`
+      <header class="header">
+        <eve-container fluid>
+          <div class="head-wrap">
+
+            <div class="brand">
+              <a href="https://projectevergreen.github.io" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/rubiks_icon.svg" alt="Greenwood logo"/>
+              </a>
+              <div class="project-name">
+                <a href="/">iSuck@Rubiks</a>
+              </div>
+            </div>
+
+            <nav>
+              <ul>
+                ${e.map((e=>{const t=a.indexOf(e.route)>=0?"active":"";return r`
+                    <li>
+                      <a href="${e.route}" title="Click to visit the ${e.label} page" class="${t}">${e.label}</a>
+                    </li>
+                  `}))}
+              </ul>
+            </nav>
+
+            <app-social-icons></app-social-icons>
+
+          </div>
+        </eve-container>
+      </header>
+    `}});
+//# sourceMappingURL=header.d172f307.js.map
+
+              </script>
+            
+
+              <script  type="module">
+                import{s as e,i as t,r as o,x as n}from"/lit-element.03977ca5.js";import"/eve-container.cf808c16.js";customElements.define("eve-button",class extends e{static get properties(){return{href:{type:String},onClick:{type:Function},size:{type:String},style:{type:String}}}get styles(){return t`
+      ${o("/* stylelint-disable */ :host .btn {     margin: 2px;     border: 1px solid var(--btn-border-color, var(--primary-color, green));     color: var(--btn-text-color, var(--primary-color, green));     background-color: var(--btn-background, var(--secondary-color, white) );     text-decoration:none;     position:relative;     display: inline-block;     border-radius: var(--btn-border-radius, 0px);   } :host .btn:hover {       background-color: var(--btn-hover-background-color, var(--primary-color, green));       color: var(--btn-hover-text-color, var(--secondary-color, white));       border: 1px solid var(--btn-hover-border-color, var(--primary-color, green));     } :host .btn-xs {     padding:5px;     font-size:12px;   } :host .btn-sm {     padding:5px;     font-size:16px;   } :host .btn-md {     padding:10px;     font-size:20px;   } :host .btn-lg {     padding:15px;     font-size:25px;   }")}
+    `}updated(){const e=this.shadowRoot;Array.from(e.childNodes).forEach((e=>{"STYLE"===e.nodeName?e.textContent+=this.style:"A"===e.nodeName&&(e.style=this.style)}))}render(){const{size:e,href:t,onClick:o}=this;return n`
+      <style>
+      </style>
+      ${t?n`
+          <a class="btn btn-${e}" href="${t}">
+            <slot></slot>
+          </a>
+          `:n`
+          <a class="btn btn-${e}" href="#" @click="${o}">
+            <slot></slot>
+          </a>
+        `}
+    `}});customElements.define("app-banner",class extends e{constructor(){super(),this.currentProjectIndex=0,this.animateState="on",this.projectTypes=["blog","portfolio","website","web app","marketing site","small business"]}static get styles(){return t`
+      ${o("@keyframes fadeOut {   from {     opacity: 1;   }    to {     opacity: 0;   } }  @keyframes fadeIn {   from {     opacity: 0;   }    to {     opacity: 1;   } }  :host .banner {     background-color: #fff;   }  :host .banner .content {       padding: 5vh 10px;       font-size: 1.7rem;       text-align: center;     }  :host .banner .content hr {         border-radius: 25px;         border-style: none;         height: 3px;         margin: 0 auto;         background-color: white;         border: 1px solid rgba(0, 0, 0, 0.6);         width: 160px;       }  :host .banner .content h1 {         font-size: 3.5rem;         color: #201e2e;       }  :host .banner .content h3 {         padding: 10px 0;         max-width: 70%;         margin: 20px auto;         color: #201e2e;       }  @media (min-width: 768px) {  :host .banner .content h3 {           max-width: 50%;           margin: 0 auto       }         }  :host .banner .content img {         display: block;         width: 40%;         margin: 10px auto;       }  @media screen and (prefers-reduced-motion: reduce) {       :host .banner span.off {         animation: none;       }          @media (prefers-reduced-motion) {       :host .banner span.off {           animation: 0       }         }     }  :host .banner span.off {       animation: 1s fadeOut ease-in-out;     }  @media screen and (prefers-reduced-motion: reduce) {       :host .banner span.on {         animation: none;       }     }  :host .banner span.on {       animation: 1.5s fadeIn linear;     }  @media (max-width: 980px) {     :host .banner {       min-height: 40vh;     }        :host .banner .content {         font-size: 1.5rem;       }          :host .banner .content h1 {           font-size: 3rem;         }          :host .banner .content img {           width: 90%;         }   }  @media (max-width: 756px) {     :host .banner {       padding: 0;     }        :host .banner .content {         margin-top: 0;       }          :host .banner .content h3 {           width: 100%;         }   }")}
+    `}cycleProjectTypes(){this.currentProjectIndex=this.currentProjectIndex+=1,this.currentProjectIndex>=this.projectTypes.length&&(this.currentProjectIndex=0)}firstUpdated(){setInterval((()=>{this.animateState="off",this.update(),setTimeout((()=>{this.cycleProjectTypes(),this.animateState="on",this.update()}),500)}),5e3)}render(){const e=this.projectTypes[this.currentProjectIndex];return n`
+      <div class='banner'>
+        <eve-container>
+          <div class='content'>
+            <img
+              src="/assets/greenwood-logo-300w.webp"
+              alt="Greenwood Logo"
+              srcset="/assets/greenwood-logo-300w.webp 350w,
+                      /assets/greenwood-logo-500w.webp 500w,
+                      /assets/greenwood-logo-750w.webp 750w,
+                      /assets/greenwood-logo-1000w.webp 1000w,
+                      /assets/greenwood-logo-1500w.webp 1500w"/>
+            
+            <h3>Your full stack <span class="emphasis-text">workbench for the web</span>.  Ready to help you build your next. . . <span class="${this.animateState}">${e}.</span></h3>
+
+            <eve-button size="md" href="/getting-started/" style="${"@media screen and (prefers-reduced-motion: reduce) {   :host .btn {     display: inline-block;     border-radius: 10px;     font-size: 1.2rem;     padding: 0.75rem;     color: white;     background-color: #201e2e;     border: 1px solid white;     transition: none;     text-decoration: none;   } }  :host .btn {   display: inline-block;   border-radius: 10px;   font-size: 1.2rem;   padding: 0.75rem;   color: white;   background-color: #201e2e;   border: 1px solid white;   transition: 0.3s;   text-decoration: none; }  :host .btn:hover, :host .btn:focus {   background-color: #425d58;   border: 1px solid white; }  @media screen and (prefers-reduced-motion: reduce) {   :host .btn:hover,   :host .btn:focus {     background-color: #201e2e;   } } "}">Get Started</eve-button>
+          </div>
+        </eve-container>
+      </div>
+    `}});
+//# sourceMappingURL=banner.ba68fda0.js.map
+
+              </script>
+            
+
+              <script  type="module">
+                import{b as e,s as t,i as s,r as i,x as l}from"/lit-element.03977ca5.js";import{c as a,M as n}from"/menu.12a65d8a.js";const h=e`
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+    <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505
+256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373
+24.568.001 33.941z"/
+  ></svg>
+`,d=e`
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224
+284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373
+9.372-24.569 9.372-33.942 0z"/>
+  </svg>
+`;customElements.define("app-shelf",class extends t{static get properties(){return{page:{type:String}}}static get styles(){return s`
+      ${i(":host h1,   :host h2,   :host h3,   :host h4,   :host h5,   :host h6 {     font-family: 'Source Sans Pro', sans-serif;   }   :host a {     text-decoration: none;     color: #2d3d3a;   }   :host a:hover,     :host a:focus {       color: black;     }   :host .list-wrap > :first-child {     display: grid;     grid-template-columns: auto 20px;     align-items: center;     font-size: 1.5em;     margin-block-start: 0.83em;     margin-block-end: 0.83em;     margin-inline-start: 0;     margin-inline-end: 0;     font-weight: bold;   }   @media (max-width: 768px) {   :host .list-wrap > :first-child {       padding-left: 10px;       padding-right: 10px   }     }   :host h2 {     display: block;     font-size: 1.5em;     margin-block-start: 0.83em;     margin-block-end: 0.83em;     margin-inline-start: 0;     margin-inline-end: 0;     font-weight: bold;   }   @media (max-width: 768px) {   :host h2 {       padding-left: 10px;       padding-right: 10px   }     }   :host div > ul {     padding-left: 0;   }   :host div > ul li {       list-style: none;     }   :host .list-wrap ul {     padding-left: 0;   }   :host .list-wrap ul li {       display: block;       margin-block-start: 1em;       margin-block-end: 1em;       margin-inline-start: 0;       margin-inline-end: 0;     }   :host .list-wrap ul li a {         cursor: pointer;       }   @media (max-width: 768px) {   :host .list-wrap ul {       padding-left: 10px   }     }   :host span {     pointer-events: none;   }   :host span > svg {       margin-top: 10px;       margin-left: auto;       height: 15px;     }   :host .hidden {     display: none !important;   }   :host .active {     color: red;   } ")}
+    `}constructor(){super(),this.page="",this.selectedIndex="",this.shelfList=[]}async connectedCallback(){super.connectedCallback(),this.collapseAll()}expandRoute(e){let t=this.shelfList.findIndex((t=>new RegExp(`^${e}$`).test(t.route)));t>-1&&(this.shelfList[t].selected=!0,this.selectedIndex=t)}collapseAll(){this.shelfList=this.shelfList.map((e=>(e.selected=!1,e)))}toggleSelectedItem(){let e=this.shelfList.findIndex(((e,t)=>t===this.selectedIndex));e>-1&&(this.shelfList[e].selected=!this.shelfList[e].selected)}setSelectedItem(e){const t=this.selectedIndex;this.selectedIndex=parseInt(e.target.id.substring(6,e.target.id.length),10),this.selectedIndex===t&&(this.selectedIndex=""),this.toggleSelectedItem()}handleShelfClick(e){this.collapseAll(),this.setSelectedItem(e),this.requestUpdate()}async fetchShelfData(){return await a.query({query:n,variables:{name:"side",route:`/${this.page}/`,order:"index_asc"}})}async updated(e){if(e.has("page")&&""!==this.page&&"/"!==this.page){const e=await this.fetchShelfData();this.shelfList=e.data.menu.children.map((e=>({...e.item,children:e.children}))),this.expandRoute(window.location.pathname),this.requestUpdate()}}renderList(){return this.shelfList.map(((e,t)=>{let s=`index_${t}`,i=e.children&&e.children.length>0?!0===e.selected?d:h:"";return l`
+        <li class="list-wrap">
+          <div>
+            <a href="${e.route}">${e.label}</a>
+            <a id="${s}" @click="${this.handleShelfClick}"><span class="pointer">${i}</span></a>
+          </div>
+
+          ${((e,t,s)=>{let i="";return t&&t.length>0&&(i=l`
+          <ul>
+            ${t.map((t=>l`
+                <li class="${s?"":"hidden"}">
+                  <a href="${e}${t.item.route}">${t.item.label}</a>
+                </li>
+              `))}
+          </ul>
+        `),i})(e.route,e.children,e.selected)}
+        </li>
+      `}))}render(){return l`
+      <div>
+        <ul>
+          ${this.renderList()}
+        </ul>
+      </div>
+    `}});
+//# sourceMappingURL=shelf.dcb4cc90.js.map
+
+              </script>
+            
+
+              <script  type="module">
+                import{s as e,x as n}from"/lit-element.03977ca5.js";customElements.define("app-scroll",class extends e{constructor(){super()}connectedCallback(){super.connectedCallback(),window.addEventListener("hashchange",this.handleHashChange.bind(this),!1),window.addEventListener("load",this.handleHashChange.bind(this),!1)}disconnectedCallback(){window.removeEventListener("hashchange",this.handleHashChange.bind(this),!1),window.removeEventListener("load",this.handleHashChange.bind(this),!1),super.disconnectedCallback()}handleHashChange(){let{hash:e}=window.location;const n=((e,n)=>{const t=this.querySelectorAll(e);return Array.from(t).filter((e=>{let t=RegExp(n,"gmi").test(e.href),a=e.href;if(t&&a.substr(a.length-n.length,a.length)===n&&t.tagName&&"h3"===t.tagName.toLowerCase())return t}))})("a",e)[0];n&&n.scrollIntoView(!0)}render(){return n`
+      <slot></slot>
+    `}});
+//# sourceMappingURL=scroll.6849a771.js.map
+
+              </script>
+            
+<script>window.onload=()=>{const e=document.getElementById("github-edit-button"),t=window.location.pathname.split("/").filter((e=>""!==e)),n=t.length<=1?`${t[0]}/index.md`:`${t.join("/")}.md`;document.getElementsByTagName("app-shelf")[0].setAttribute("page",t[0]),e.href=`https://github.com/ProjectEvergreen/greenwood/tree/master/www/pages/${n}`};
+//# sourceMappingURL=269417351.0b3c600c.js.map
+</script>
+        
+      
+              <script  type="module">
+                document.addEventListener("click",(async function(e){const t=window.location,o=e.composedPath&&"A"===e.composedPath()[0].tagName?e.composedPath()[0].href:"",n=o.indexOf(t.hostname)>=0||o.indexOf("localhost")>=0;if(""!==o&&n){e.preventDefault();const n=new URL(o,t.origin),a=Array.from(document.getElementsByTagName("greenwood-route")).filter((e=>e.getAttribute("data-route")===n.pathname))[0];if(a&&a.getAttribute("data-template")===window.__greenwood.currentTemplate){const{hash:e,pathname:o}=n;t.pathname!==o&&(await a.loadRoute(),history.pushState({},"",o)),""!==e&&(t.hash=e)}else window.location.href=o}})),window.addEventListener("popstate",(()=>{try{const e=window.location,t=Array.from(document.getElementsByTagName("greenwood-route")).filter((t=>t.getAttribute("data-route")===e.pathname))[0];t&&t.loadRoute()}catch(e){console.error("Unexpected error trying to go back.",e)}}));class e extends HTMLElement{async loadRoute(){const e=this.getAttribute("data-key");await fetch(e).then((e=>e.text())).then((e=>{document.getElementsByTagName("router-outlet")[0].innerHTML=e}))}}class t extends HTMLElement{}customElements.define("greenwood-route",e),customElements.define("router-outlet",t);
+//# sourceMappingURL=router.2a368df1.js.map
+
+              </script>
+            
+
+      <script>window.__greenwood=window.__greenwood||{};window.__greenwood.currentTemplate="page";</script></head>
+    
+        
+        <body>
+
+
+          <router-outlet>
+            
+          
+
+    <div class="gwd-wrapper">
+      <app-header><!---->
+      <header class="header style-scope app-header">
+        <eve-container fluid="" class="style-scope app-header"><!---->
+      
+      <div class="@custom-media --screen-xs (max-width: 576px); @custom-media --screen-sm (min-width: 576px); @custom-media --screen-md (min-width: 768px); @custom-media --screen-lg (min-width: 992px); @custom-media --screen-xl (min-width: 1200px);  :host .container {     margin-right: auto;     margin-left: auto;     padding-left: 15px;     padding-right: 15px;   }  :host .container-fluid {     margin-right: auto;     margin-left: auto;     padding-left: 15px;     padding-right: 15px;   }  @media (--screen-xs) {     :host .container {       width: calc(100% - 30px);     }   }  @media (--screen-sm) {     :host .container {       width: 540px;     }   }  @media (--screen-md) {     :host .container {       width: 720px;     }   }  @media (--screen-lg) {     :host .container {       width: 960px;     }   }  @media (--screen-xl) {     :host .container {       width: 1140px;     }   } style-scope eve-container">
+        
+          <div class="head-wrap style-scope app-header">
+
+            <div class="brand style-scope app-header">
+              <a href="https://projectevergreen.github.io" target="_blank" rel="noopener noreferrer" class="style-scope app-header">
+                <img src="/assets/rubiks_icon.svg" alt="Greenwood logo" class="style-scope app-header">
+              </a>
+              <div class="project-name style-scope app-header">
+                <a href="/" class="style-scope app-header">iSuck@Rubiks</a>
+              </div>
+            </div>
+
+            <nav class="style-scope app-header">
+              <ul class="style-scope app-header">
+                <!--?lit$366801227$--><!---->
+                    <li class="style-scope app-header">
+                      <a class="active style-scope app-header" href="/about/" title="Click to visit the About page"><!--?lit$366801227$-->About</a>
+                    </li>
+                  <!----><!---->
+                    <li class="style-scope app-header">
+                      <a class="style-scope app-header" href="/guides/" title="Click to visit the Guide page"><!--?lit$366801227$-->Guide</a>
+                    </li>
+                  <!----><!---->
+                    <li class="style-scope app-header">
+                      <a class="style-scope app-header" href="/resources/" title="Click to visit the Resources page"><!--?lit$366801227$-->Resources</a>
+                    </li>
+                  <!---->
+              </ul>
+            </nav>
+
+            <app-social-icons class="style-scope app-header"><!---->
+      <a class="icons style-scope app-social-icons" target="_blank" rel="noreferrer noopener" aria-label="open github page" href="https://github.com/ProjectEvergreen/greenwood"><!--?lit$366801227$--><svg height="35" viewBox="0 0 16 16" version="1.1" width="35" aria-hidden="true" class="style-scope app-social-icons">
+    <path fill-rule="evenodd" fill="white" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+      0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+      1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12
+      0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82
+      2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65
+      3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
+      8.013 0 0016 8c0-4.42-3.58-8-8-8z" class="style-scope app-social-icons">
+    </path>
+  </svg></a>
+
+      <a class="icons slack-icon style-scope app-social-icons" target="_blank" rel="noreferrer noopener" aria-label="slack" href="https://join.slack.com/t/thegreenhouseio/shared_invite/enQtMzcyMzE2Mjk1MjgwLTU5YmM1MDJiMTg0ODk4MjA4NzUwNWFmZmMxNDY5MTcwM2I0MjYxN2VhOTEwNDU2YWQwOWQzZmY1YzY4MWRlOGI"><!--?lit$366801227$--><svg width="35" height="35" style="fill:white;" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg" class="style-scope app-social-icons">
+    <g fill="none" fill-rule="evenodd" class="style-scope app-social-icons">
+      <path d="M19.712.133a5.381 5.381 0 0 0-5.376 5.387 5.381 5.381 0 0 0 5.376
+        5.386h5.376V5.52A5.381 5.381 0 0 0 19.712.133m0 14.365H5.376A5.381
+        5.381 0 0 0 0 19.884a5.381 5.381 0 0 0 5.376 5.387h14.336a5.381 5.381
+        0 0 0 5.376-5.387 5.381 5.381 0 0 0-5.376-5.386" fill="#fff" class="style-scope app-social-icons"></path>
+      <path d="M53.76 19.884a5.381 5.381 0 0 0-5.376-5.386 5.381 5.381 0 0 0-5.376
+        5.386v5.387h5.376a5.381 5.381 0 0 0 5.376-5.387m-14.336 0V5.52A5.381 5.381
+        0 0 0 34.048.133a5.381 5.381 0 0 0-5.376 5.387v14.364a5.381 5.381 0 0 0
+        5.376 5.387 5.381 5.381 0 0 0 5.376-5.387" fill="#fff" class="style-scope app-social-icons"></path>
+      <path d="M34.048 54a5.381 5.381 0 0 0 5.376-5.387 5.381 5.381 0 0
+        0-5.376-5.386h-5.376v5.386A5.381 5.381 0 0 0 34.048 54m0-14.365h14.336a5.381
+        5.381 0 0 0 5.376-5.386 5.381 5.381 0 0 0-5.376-5.387H34.048a5.381 5.381
+        0 0 0-5.376 5.387 5.381 5.381 0 0 0 5.376 5.386" fill="#fff" class="style-scope app-social-icons"></path>
+      <path d="M0 34.249a5.381 5.381 0 0 0 5.376 5.386 5.381 5.381 0 0 0
+        5.376-5.386v-5.387H5.376A5.381 5.381 0 0 0 0 34.25m14.336-.001v14.364A5.381
+        5.381 0 0 0 19.712 54a5.381 5.381 0 0 0 5.376-5.387V34.25a5.381 5.381
+        0 0 0-5.376-5.387 5.381 5.381 0 0 0-5.376 5.387" fill="#fff" class="style-scope app-social-icons"></path>
+    </g>
+  </svg></a>
+
+      <a class="icons style-scope app-social-icons" target="_blank" rel="noreferrer noopener" aria-label="open twitter page" href="https://twitter.com/PrjEvergreen"><!--?lit$366801227$--><!--?xml version="1.0" ?-->
+  
+  <svg enable-background="new 0 0 56.693 56.693" height="40px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="40px" fill="white" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="style-scope app-social-icons">
+      <path d="M28.348,5.157c-13.6,0-24.625,11.027-24.625,24.625c0,13.6,11.025,24.623,24.625,24.623c13.6,0,24.623-11.023,24.623-24.623
+        C52.971,16.184,41.947,5.157,28.348,5.157z M40.752,24.817c0.013,0.266,0.018,0.533,0.018,0.803c0,8.201-6.242,17.656-17.656,17.656
+        c-3.504,0-6.767-1.027-9.513-2.787c0.486,0.057,0.979,0.086,1.48,0.086c2.908,0,5.584-0.992,7.707-2.656
+        c-2.715-0.051-5.006-1.846-5.796-4.311c0.378,0.074,0.767,0.111,1.167,0.111c0.566,0,1.114-0.074,1.635-0.217
+        c-2.84-0.57-4.979-3.08-4.979-6.084c0-0.027,0-0.053,0.001-0.08c0.836,0.465,1.793,0.744,2.811,0.777
+        c-1.666-1.115-2.761-3.012-2.761-5.166c0-1.137,0.306-2.204,0.84-3.12c3.061,3.754,7.634,6.225,12.792,6.483
+        c-0.106-0.453-0.161-0.928-0.161-1.414c0-3.426,2.778-6.205,6.206-6.205c1.785,0,3.397,0.754,4.529,1.959
+        c1.414-0.277,2.742-0.795,3.941-1.506c-0.465,1.45-1.448,2.666-2.73,3.433c1.257-0.15,2.453-0.484,3.565-0.977
+        C43.018,22.849,41.965,23.942,40.752,24.817z" class="style-scope app-social-icons"></path>
+  </svg></a>
+    </app-social-icons>
+
+          </div>
+        
+      </div>
+    </eve-container>
+      </header>
+    </app-header>
+      
+
+    <div class="gwd-content-wrapper">
+
+      <div class="gwd-sidebar">
+        <app-shelf page="about"><!---->
+      <div class="style-scope app-shelf">
+        <ul class="style-scope app-shelf">
+          <!--?lit$366801227$--><!---->
+        <li class="list-wrap style-scope app-shelf">
+          <div class="style-scope app-shelf">
+            <a class="style-scope app-shelf" href="/about/"><!--?lit$366801227$-->About</a>
+            <a class="style-scope app-shelf" id="index_0"><span class="pointer style-scope app-shelf"><!--?lit$366801227$-->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="style-scope app-shelf">
+    <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224
+284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373
+9.372-24.569 9.372-33.942 0z" class="style-scope app-shelf"></path>
+  </svg>
+</span></a>
+          </div>
+
+          <!--?lit$366801227$-->
+          <ul class="style-scope app-shelf">
+            <!--?lit$366801227$--><!---->
+                <li class="style-scope app-shelf">
+                  <a class="style-scope app-shelf" href="/about/#the-puzzle"><!--?lit$366801227$-->The Puzzle</a>
+                </li>
+              <!----><!---->
+                <li class="style-scope app-shelf">
+                  <a class="style-scope app-shelf" href="/about/#competition"><!--?lit$366801227$-->Competition</a>
+                </li>
+              <!----><!---->
+                <li class="style-scope app-shelf">
+                  <a class="style-scope app-shelf" href="/about/#variations"><!--?lit$366801227$-->Variations</a>
+                </li>
+              <!---->
+          </ul>
+        
+        </li>
+      <!---->
+        </ul>
+      </div>
+    </app-shelf>
+      </div>
+
+      <div class="gwd-content">
+        <eve-container fluid=""><!---->
+      
+      <div class="@custom-media --screen-xs (max-width: 576px); @custom-media --screen-sm (min-width: 576px); @custom-media --screen-md (min-width: 768px); @custom-media --screen-lg (min-width: 992px); @custom-media --screen-xl (min-width: 1200px);  :host .container {     margin-right: auto;     margin-left: auto;     padding-left: 15px;     padding-right: 15px;   }  :host .container-fluid {     margin-right: auto;     margin-left: auto;     padding-left: 15px;     padding-right: 15px;   }  @media (--screen-xs) {     :host .container {       width: calc(100% - 30px);     }   }  @media (--screen-sm) {     :host .container {       width: 540px;     }   }  @media (--screen-md) {     :host .container {       width: 720px;     }   }  @media (--screen-lg) {     :host .container {       width: 960px;     }   }  @media (--screen-xl) {     :host .container {       width: 1140px;     }   } style-scope eve-container">
+        
+          <app-scroll><!---->
+      
+            <h3 id="inventor"><a aria-hidden="true" tabindex="-1" href="#inventor"><span class="icon icon-link"></span></a>Inventor</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Erno_Rubik_Genius_Gala_2014.jpg/470px-Erno_Rubik_Genius_Gala_2014.jpg" style="width: 300px; height: 400px; text-align:center">
+<p>The Rubik's Cube is a 3D mechanical puzzle invented by Hungarian architect and professor Ernő Rubik in 1974. Rubik initially created the puzzle as a teaching tool to help his students understand three-dimensional geometry and spatial relationships.</p>
+<h3 id="the-puzzle"><a aria-hidden="true" tabindex="-1" href="#the-puzzle"><span class="icon icon-link"></span></a>The Puzzle</h3>
+<p>The puzzle consists of a cube-shaped device made up of smaller cubies. Each face of the cube is divided into nine smaller squares, with each square having a different color. The six faces of the cube can be rotated independently, allowing the colors to become mixed up.</p>
+<p>Rubik spent about a month trying to solve the puzzle himself after he assembled the first prototype. He found the cube to be incredibly challenging, with over <strong>43 quintillion possible combinations</strong>. Eventually, he succeeded in solving it and realized the immense potential of the puzzle as a standalone product.</p>
+<p>In 1977, Rubik's Cube was patented and introduced to the public in Hungary. Initially known as the "Magic Cube," it quickly gained popularity, and Ideal Toy Corporation recognized its potential as a global phenomenon. In 1980, the puzzle was licensed to the Ideal Toy Corporation and introduced internationally as the "Rubik's Cube."</p>
+<p>Rubik's Cube became a sensation worldwide, captivating millions of people who were fascinated by its complexity and the challenge it presented. It sparked a global craze, with people of all ages attempting to solve the puzzle and compete for the fastest solving times.</p>
+<p>In the early years, solving methods and strategies were developed by enthusiasts to tackle the Rubik's Cube. Notably, David Singmaster, a British mathematician, published a comprehensive guide called "Notes on Rubik's Magic Cube" in 1980, which laid the foundation for solving techniques.</p>
+<h3 id="competition"><a aria-hidden="true" tabindex="-1" href="#competition"><span class="icon icon-link"></span></a>Competition</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NevGDFBfQGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<p>Competitive cubing events began to emerge, and the World Cube Association (WCA) was founded in 2004 to govern and organize official Rubik's Cube competitions. Speedcubing, the sport of solving the cube as quickly as possible, gained popularity, and numerous records for the fastest solve times have been set over the years.</p>
+<h3 id="variations"><a aria-hidden="true" tabindex="-1" href="#variations"><span class="icon icon-link"></span></a>Variations</h3>
+<p>Beyond the original 3x3x3 Rubik's Cube, variations and larger-sized puzzles have been introduced, including 2x2x2, 4x4x4, and even more complex designs like the 17x17x17 cube. These variations have further expanded the challenge and appeal of the Rubik's Cube.</p>
+<img src="/assets/variation_rubiks.png">
+<p>The Rubik's Cube has remained an enduring symbol of logic, problem-solving, and perseverance. It has become a cultural icon, appearing in movies, art, and literature, and continues to captivate and engage people worldwide.</p>
+          
+    </app-scroll>
+        
+      </div>
+    </eve-container>
+        <div id="github-edit-button-container">
+          <a id="github-edit-button" href="https://github.com/ProjectEvergreen/greenwood/tree/master/www/pages/about/index.md">Edit on GitHub</a>
+        </div>
+      </div>
+
+    </div>
+
+  
+      
+    <app-footer>
+      <style>footer{grid-area:footer}footer{background-color:#00836D;min-height:30px;padding-top:10px;}footer h4{width:90%;margin:0 auto!important;padding:0;text-align:center;}footer a{color:white;text-decoration:none;}footer span.separator{color:white}</style>
+      <footer class="footer">
+        <h4>
+          <a href="/">Greenwood v1.0.0</a> <span class="separator">◈</span>
+        </h4>
+      </footer>
+    </app-footer>
+    </div>
+
+  
+        
+      
+    
+
+          </router-outlet>
+
+          
+          <greenwood-route data-route="/about/" data-template="page" data-key="/_routes/about/index.html"></greenwood-route>
+        
+
+          <greenwood-route data-route="/guides/" data-template="page" data-key="/_routes/guides/index.html"></greenwood-route>
+        
+
+          <greenwood-route data-route="/" data-template="/" data-key="/_routes/index.html"></greenwood-route>
+        
+
+          <greenwood-route data-route="/resources/" data-template="blog" data-key="/_routes/resources/index.html"></greenwood-route>
+        
+        </body>
+      </html>
