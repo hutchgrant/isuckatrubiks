@@ -1,0 +1,40 @@
+{
+  "name": "rubiks",
+  "version": "1.0.0",
+  "repository": "https://github.com/ProjectEvergreen/greenwood",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "greenwood build",
+    "start": "greenwood develop"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@evergreen-wc/eve-button": "^0.1.1",
+    "@evergreen-wc/eve-container": "^0.1.1",
+    "@greenwood/cli": "^0.28.2",
+    "lit": "^2.0.0",
+    "prismjs": "^1.21.0"
+  },
+  "devDependencies": {
+    "@greenwood/plugin-graphql": "^0.28.2",
+    "@greenwood/plugin-import-css": "^0.28.2",
+    "@greenwood/plugin-import-json": "^0.28.2",
+    "@greenwood/plugin-include-html": "^0.28.2",
+    "@greenwood/plugin-polyfills": "^0.28.2",
+    "@greenwood/plugin-postcss": "^0.28.2",
+    "@greenwood/plugin-renderer-puppeteer": "^0.28.2",
+    "@mapbox/rehype-prism": "^0.8.0",
+    "postcss-nested": "^6.0.1",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-slug": "^5.1.0",
+    "remark-github": "^11.2.4",
+    "rollup-plugin-analyzer": "^4.0.0"
+  },
+  "resolutions": {
+    "lit": "^2.1.1"
+  }
+}

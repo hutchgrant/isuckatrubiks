@@ -1,0 +1,92 @@
+:host {
+  & .header {
+    background-color: #73DCCA;
+    min-height: 30px;
+    padding: 10px;
+    font-size: 1.2rem;
+
+    & a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    & a.active {
+      border-bottom: 2px solid #000;
+    }
+
+    & .project-name {
+      margin: -2px 0 auto;
+      padding: 0;
+      padding-top: 4px;
+      display: inline-block;
+      color: #201e2e;
+      font-weight: bold;
+    }
+
+    & .head-wrap {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    & nav {
+      justify-items: left;
+      width: 55%;
+
+      & ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+
+        & li {
+          margin: 0;
+          color: #00836D;
+          display: inline-block;
+          padding: 10px;
+
+          &:hover,
+          &:focus {
+            color: #f9e7ca;
+
+            & a {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    & .brand {
+      justify-items: left;
+      padding: 10px;
+
+      & img {
+        float: left;
+        height: 30px;
+        width: 30px;
+        margin-right: 0.5rem;
+      }
+    }
+
+    & .social {
+      margin-left: auto;
+      text-align: right;
+
+      & img {
+        width: 84px;
+        height: 20px;
+      }
+    }
+  }
+}
